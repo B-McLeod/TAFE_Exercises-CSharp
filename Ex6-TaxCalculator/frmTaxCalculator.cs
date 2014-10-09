@@ -14,7 +14,6 @@ namespace Ex6_TaxCalculator
 	{
 		// Tax Brackets
 		Decimal tax0pct = 10;
-		Decimal tax0low = 0;
 		Decimal tax0high = 8700;
 
 		Decimal tax1pct = 15;
@@ -60,13 +59,49 @@ namespace Ex6_TaxCalculator
 
 			owed = calculateTax(income);
 
-			txtOwed.Text = owed.ToString();
+			txtOwed.Text = owed.ToString("C");
 		}
 
 		private Decimal calculateTax(Decimal income)
 		{
 			Decimal taxOwed = 0;
-			// IF STATEMENTS BELOW
+
+			if (income >= tax5low)
+			{
+				taxOwed = income - tax5low;
+				taxOwed = taxOwed * (tax5pct / 100);
+				taxOwed += tax5pay;
+			}
+			else if (income >= tax4low && income <= tax4high)
+			{
+				taxOwed = income - tax4low;
+				taxOwed = taxOwed * (tax4pct / 100);
+				taxOwed += tax4pay;
+			}
+			else if (income >= tax3low && income <= tax3high)
+			{
+				taxOwed = income - tax3low;
+				taxOwed = taxOwed * (tax3pct / 100);
+				taxOwed += tax3pay;
+			}
+			else if (income >= tax2low && income <= tax2high)
+			{
+				taxOwed = income - tax2low;
+				taxOwed = taxOwed * (tax2pct / 100);
+				taxOwed += tax2pay;
+			}
+			else if (income >= tax1low && income <= tax1high)
+			{
+				taxOwed = income - tax1low;
+				taxOwed = taxOwed * (tax1pct / 100);
+				taxOwed += tax1pay;
+			}
+			else
+			{
+				taxOwed = income * (tax0pct / 100);
+			}
+
+			return taxOwed;
 		}
 	}
 }

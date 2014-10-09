@@ -25,7 +25,7 @@ namespace Ex5_Calculate_Factor
 			txtFactorial.Text = String.Format("{0:n0}", factor);
 		}
 
-		// Recursion method to get factorial number.
+		// Recursion method to get factor of  number.
 		private static long GetFactor(int x)
 		{
 			if (x == 0)
