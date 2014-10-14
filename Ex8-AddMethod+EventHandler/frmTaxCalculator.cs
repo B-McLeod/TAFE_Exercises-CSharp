@@ -1,6 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
 
+/*
+ * 
+ * Exercise 8 - Add a method and an event handler to the income tax calculator
+ *
+ */
+
 namespace Ex6_TaxCalculator
 {
 	public partial class frmTaxCalculator : Form
@@ -94,6 +100,11 @@ namespace Ex6_TaxCalculator
 			}
 
 			return taxOwed;
+		}
+
+		private void txtIncome_TextChanged(object sender, EventArgs e)
+		{
+			txtOwed.Text = "";
 		}
 	}
 }

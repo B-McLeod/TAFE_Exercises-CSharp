@@ -1,19 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1-Design_a_simple_form", "Ex1-Design_a_simple_form\Ex1-Design_a_simple_form.csproj", "{5E8CE737-B0AB-4469-8FF8-BBD67BB077E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01-Design_a_simple_form", "Ex1-Design_a_simple_form\Ex01-Design_a_simple_form.csproj", "{5E8CE737-B0AB-4469-8FF8-BBD67BB077E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex2-Code_and_Test", "Ex2-Code_and_Test\Ex2-Code_and_Test.csproj", "{37DDEBCB-0316-4DDD-8E24-7947D631D79E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02-Code_and_Test", "Ex2-Code_and_Test\Ex02-Code_and_Test.csproj", "{37DDEBCB-0316-4DDD-8E24-7947D631D79E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex3-Area_and_Perimeter", "Ex3-Area_and_Perimeter\Ex3-Area_and_Perimeter.csproj", "{461B3F2B-1669-47EE-B97D-322341F1E91A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex03-Area_and_Perimeter", "Ex3-Area_and_Perimeter\Ex03-Area_and_Perimeter.csproj", "{461B3F2B-1669-47EE-B97D-322341F1E91A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4-AccumulateScores", "Ex4-AccumulateScores\Ex4-AccumulateScores.csproj", "{7D37CEA3-997E-4E21-9A6E-5B1961B3FC6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04-AccumulateScores", "Ex4-AccumulateScores\Ex04-AccumulateScores.csproj", "{7D37CEA3-997E-4E21-9A6E-5B1961B3FC6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5-Calculate_Factor", "Ex5-Calculate_Factor\Ex5-Calculate_Factor.csproj", "{84DBBBDA-53E7-457B-8E3C-ECABC59C084A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex05-Calculate_Factor", "Ex5-Calculate_Factor\Ex05-Calculate_Factor.csproj", "{84DBBBDA-53E7-457B-8E3C-ECABC59C084A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex6-TaxCalculator", "Ex6-TaxCalculator\Ex6-TaxCalculator.csproj", "{E0076021-AB38-4A36-86F7-F6215B336B3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex06-TaxCalculator", "Ex6-TaxCalculator\Ex06-TaxCalculator.csproj", "{E0076021-AB38-4A36-86F7-F6215B336B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex07-SimpleCalculator", "Ex7-SimpleCalculator\Ex07-SimpleCalculator.csproj", "{1A9AEC8E-A810-4B82-A588-CA6F1C8DA34F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex08-AddMethod_and_EventHandler", "Ex8-AddMethod+EventHandler\Ex08-AddMethod_and_EventHandler.csproj", "{C1765E8C-51EC-436D-9E87-0CBF33D7F5E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex09-ExceptionHandling", "Ex9-ExceptionHandling\Ex09-ExceptionHandling.csproj", "{C2F65303-07AF-4E1A-8245-7659CCCE5626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10-DataValidation", "Ex10-DataValidation\Ex10-DataValidation.csproj", "{3C7FA113-2107-42A7-BF0D-82394584BEB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex11-DisplayArrayTestScores", "Ex11-DisplayScoreArray\Ex11-DisplayArrayTestScores.csproj", "{09C2DD9D-ADDF-46DD-B5CC-AFC89DAD52AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +55,26 @@ Global
 		{E0076021-AB38-4A36-86F7-F6215B336B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0076021-AB38-4A36-86F7-F6215B336B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0076021-AB38-4A36-86F7-F6215B336B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9AEC8E-A810-4B82-A588-CA6F1C8DA34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9AEC8E-A810-4B82-A588-CA6F1C8DA34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9AEC8E-A810-4B82-A588-CA6F1C8DA34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9AEC8E-A810-4B82-A588-CA6F1C8DA34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1765E8C-51EC-436D-9E87-0CBF33D7F5E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1765E8C-51EC-436D-9E87-0CBF33D7F5E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1765E8C-51EC-436D-9E87-0CBF33D7F5E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1765E8C-51EC-436D-9E87-0CBF33D7F5E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F65303-07AF-4E1A-8245-7659CCCE5626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F65303-07AF-4E1A-8245-7659CCCE5626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F65303-07AF-4E1A-8245-7659CCCE5626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F65303-07AF-4E1A-8245-7659CCCE5626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7FA113-2107-42A7-BF0D-82394584BEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7FA113-2107-42A7-BF0D-82394584BEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7FA113-2107-42A7-BF0D-82394584BEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7FA113-2107-42A7-BF0D-82394584BEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C2DD9D-ADDF-46DD-B5CC-AFC89DAD52AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C2DD9D-ADDF-46DD-B5CC-AFC89DAD52AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C2DD9D-ADDF-46DD-B5CC-AFC89DAD52AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C2DD9D-ADDF-46DD-B5CC-AFC89DAD52AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
