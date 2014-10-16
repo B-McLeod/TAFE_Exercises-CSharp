@@ -1,6 +1,6 @@
 namespace ScoreCalculator
 {
-    partial class Form1
+    partial class frmScoreCalc
     {
         /// <summary>
         /// Required designer variable.
@@ -85,7 +85,6 @@ namespace ScoreCalculator
 			this.txtScore.Name = "txtScore";
 			this.txtScore.Size = new System.Drawing.Size(40, 20);
 			this.txtScore.TabIndex = 1;
-			this.txtScore.TextChanged += new System.EventHandler(this.txtScore_TextChanged);
 			// 
 			// Label2
 			// 
