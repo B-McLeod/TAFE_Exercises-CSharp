@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex11-DisplayArrayTestScores
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex12-DisplayListTestScores", "Ex12-DisplayListTestScores\Ex12-DisplayListTestScores.csproj", "{4545DAC0-94B4-4DDF-9F9D-A0DF1DDE48E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex13-CalculateReservationTotals", "Ex13-CalculateReservationTotals\Ex13-CalculateReservationTotals.csproj", "{15B7E6AE-2C55-4E7E-9D98-F1A3E4DC0079}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{4545DAC0-94B4-4DDF-9F9D-A0DF1DDE48E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4545DAC0-94B4-4DDF-9F9D-A0DF1DDE48E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4545DAC0-94B4-4DDF-9F9D-A0DF1DDE48E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B7E6AE-2C55-4E7E-9D98-F1A3E4DC0079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B7E6AE-2C55-4E7E-9D98-F1A3E4DC0079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B7E6AE-2C55-4E7E-9D98-F1A3E4DC0079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B7E6AE-2C55-4E7E-9D98-F1A3E4DC0079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

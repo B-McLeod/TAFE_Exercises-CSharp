@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace ScoreCalculator
@@ -11,8 +12,7 @@ namespace ScoreCalculator
 		}
 
 		private int total = 0;
-		private int count = 0;
-		private int[] scoresArray = new int[20];
+		private List<int> scoresList = new List<int>();
 
 		private void btnExit_Click(object sender, System.EventArgs e)
 		{
@@ -26,8 +26,8 @@ namespace ScoreCalculator
 				int score = Convert.ToInt32(txtScore.Text);
 				total += score;
 
-				scoresArray[count] = score;
-				count += 1;
+				scoresList.Add(score);
+				int count = scoresList.Count;
 
 				int average = total / count;
 				txtScoreTotal.Text = total.ToString();
@@ -45,9 +45,7 @@ namespace ScoreCalculator
 		private void btnClear_Click(object sender, EventArgs e)
 		{
 			total = 0;
-			count = 0;
-
-			Array.Clear(scoresArray, 0, scoresArray.Length);
+			scoresList.Clear();
 
 			txtScore.Text = "";
 			txtScoreTotal.Text = "";
@@ -58,22 +56,15 @@ namespace ScoreCalculator
 
 		private void btnDisplay_Click(object sender, EventArgs e)
 		{
-			int[] listArray = new int[count];
-			String scoreList = null;
+			String sortedList = null;
 
-			for (int i = 0; i < count; i++)
+			scoresList.Sort();
+			foreach (int x in scoresList)
 			{
-				listArray[i] = scoresArray[i];
+				sortedList += x.ToString() + "\n";
 			}
 
-			Array.Sort(listArray);
-
-			foreach (int x in listArray)
-			{
-				scoreList += x.ToString() + "\n";
-			}
-
-			MessageBox.Show(scoreList, "Sorted scores");
+			MessageBox.Show(sortedList, "Sorted scores");
 		}
 	}
 }
