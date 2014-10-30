@@ -1,30 +1,23 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace Ex13_CalculateReservationTotals
 {
 	public partial class frmReservationTotals : Form
-    {
+	{
 		private DateTime todaysDate = DateTime.Today;
 		private DateTime arrivalDate;
 		private DateTime departDate;
 		private DateTime min = DateTime.Today;
 		private DateTime max = DateTime.Today.AddYears(5);
 
-        public frmReservationTotals()
-        {
-            InitializeComponent();
+		public frmReservationTotals()
+		{
+			InitializeComponent();
 			txtArrivalDate.Text = DateTime.Now.ToShortDateString();
 			txtDepartureDate.Text = DateTime.Now.AddDays(3).ToShortDateString();
-        }
+		}
 
 		public bool IsValidData()
 		{
@@ -43,16 +36,16 @@ namespace Ex13_CalculateReservationTotals
 			}
 		}
 
-        public bool IsPresent(TextBox textBox, string name)
-        {
-            if (textBox.Text == "")
-            {
-                MessageBox.Show(name + " is a required field.", "Entry Error");
-                textBox.Focus();
-                return false;
-            }
-            return true;
-        }
+		public bool IsPresent(TextBox textBox, string name)
+		{
+			if (textBox.Text == "")
+			{
+				MessageBox.Show(name + " is a required field.", "Entry Error");
+				textBox.Focus();
+				return false;
+			}
+			return true;
+		}
 
 		public bool IsDateTime(TextBox textBox, String name)
 		{
@@ -96,10 +89,10 @@ namespace Ex13_CalculateReservationTotals
 			}
 		}
 
-        private void btnExit_Click(object sender, System.EventArgs e)
-        {
+		private void btnExit_Click(object sender, System.EventArgs e)
+		{
 			Application.Exit();
-        }
+		}
 
 		private void btnCalculate_Click(object sender, EventArgs e)
 		{
@@ -123,9 +116,11 @@ namespace Ex13_CalculateReservationTotals
 							case DayOfWeek.Friday:
 								totalPrice += 150;
 								break;
+
 							case DayOfWeek.Saturday:
 								totalPrice += 150;
 								break;
+
 							default:
 								totalPrice += 120;
 								break;
@@ -144,8 +139,6 @@ namespace Ex13_CalculateReservationTotals
 					MessageBox.Show("Departure date must be greater than the arrival date!", "Entry Error");
 				}
 			}
-
-
 		}
-    }
+	}
 }

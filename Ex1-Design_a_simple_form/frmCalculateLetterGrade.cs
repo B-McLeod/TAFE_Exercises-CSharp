@@ -16,5 +16,10 @@ namespace Ex1_Design_a_simple_form
 		{
 			InitializeComponent();
 		}
+
+		private void btnExit_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
 	}
 }
