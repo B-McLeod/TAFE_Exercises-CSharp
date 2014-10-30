@@ -31,8 +31,6 @@ namespace Ex13_CalculateReservationTotals
 			this.Label5 = new System.Windows.Forms.Label();
 			this.btnExit = new System.Windows.Forms.Button();
 			this.btnCalculate = new System.Windows.Forms.Button();
-			this.txtDepartureDate = new System.Windows.Forms.TextBox();
-			this.txtArrivalDate = new System.Windows.Forms.TextBox();
 			this.Label4 = new System.Windows.Forms.Label();
 			this.Label2 = new System.Windows.Forms.Label();
 			this.Label1 = new System.Windows.Forms.Label();
@@ -40,6 +38,8 @@ namespace Ex13_CalculateReservationTotals
 			this.txtAvgPrice = new System.Windows.Forms.TextBox();
 			this.txtTotalPrice = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
+			this.txtArrivalDate = new System.Windows.Forms.TextBox();
+			this.txtDepartureDate = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// Label5
@@ -69,20 +69,6 @@ namespace Ex13_CalculateReservationTotals
 			this.btnCalculate.TabIndex = 32;
 			this.btnCalculate.Text = "&Calculate";
 			this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-			// 
-			// txtDepartureDate
-			// 
-			this.txtDepartureDate.Location = new System.Drawing.Point(125, 37);
-			this.txtDepartureDate.Name = "txtDepartureDate";
-			this.txtDepartureDate.Size = new System.Drawing.Size(88, 20);
-			this.txtDepartureDate.TabIndex = 29;
-			// 
-			// txtArrivalDate
-			// 
-			this.txtArrivalDate.Location = new System.Drawing.Point(125, 11);
-			this.txtArrivalDate.Name = "txtArrivalDate";
-			this.txtArrivalDate.Size = new System.Drawing.Size(88, 20);
-			this.txtArrivalDate.TabIndex = 28;
 			// 
 			// Label4
 			// 
@@ -134,7 +120,7 @@ namespace Ex13_CalculateReservationTotals
 			this.txtTotalPrice.Location = new System.Drawing.Point(124, 89);
 			this.txtTotalPrice.Name = "txtTotalPrice";
 			this.txtTotalPrice.ReadOnly = true;
-			this.txtTotalPrice.Size = new System.Drawing.Size(89, 20);
+			this.txtTotalPrice.Size = new System.Drawing.Size(88, 20);
 			this.txtTotalPrice.TabIndex = 37;
 			this.txtTotalPrice.TabStop = false;
 			// 
@@ -148,6 +134,20 @@ namespace Ex13_CalculateReservationTotals
 			this.label3.Text = "Avg. price per night:";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
+			// txtArrivalDate
+			// 
+			this.txtArrivalDate.Location = new System.Drawing.Point(124, 12);
+			this.txtArrivalDate.Name = "txtArrivalDate";
+			this.txtArrivalDate.Size = new System.Drawing.Size(88, 20);
+			this.txtArrivalDate.TabIndex = 39;
+			// 
+			// txtDepartureDate
+			// 
+			this.txtDepartureDate.Location = new System.Drawing.Point(124, 37);
+			this.txtDepartureDate.Name = "txtDepartureDate";
+			this.txtDepartureDate.Size = new System.Drawing.Size(88, 20);
+			this.txtDepartureDate.TabIndex = 40;
+			// 
 			// frmReservationTotals
 			// 
 			this.AcceptButton = this.btnCalculate;
@@ -155,6 +155,8 @@ namespace Ex13_CalculateReservationTotals
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.btnExit;
 			this.ClientSize = new System.Drawing.Size(234, 197);
+			this.Controls.Add(this.txtDepartureDate);
+			this.Controls.Add(this.txtArrivalDate);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.txtTotalPrice);
 			this.Controls.Add(this.txtAvgPrice);
@@ -162,8 +164,6 @@ namespace Ex13_CalculateReservationTotals
 			this.Controls.Add(this.Label5);
 			this.Controls.Add(this.btnExit);
 			this.Controls.Add(this.btnCalculate);
-			this.Controls.Add(this.txtDepartureDate);
-			this.Controls.Add(this.txtArrivalDate);
 			this.Controls.Add(this.Label4);
 			this.Controls.Add(this.Label2);
 			this.Controls.Add(this.Label1);
@@ -179,16 +179,16 @@ namespace Ex13_CalculateReservationTotals
 
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Button btnExit;
-        internal System.Windows.Forms.Button btnCalculate;
-        internal System.Windows.Forms.TextBox txtDepartureDate;
-        internal System.Windows.Forms.TextBox txtArrivalDate;
+		internal System.Windows.Forms.Button btnCalculate;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
         private System.Windows.Forms.TextBox txtNights;
         private System.Windows.Forms.TextBox txtAvgPrice;
         private System.Windows.Forms.TextBox txtTotalPrice;
-        private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.TextBox txtArrivalDate;
+		private System.Windows.Forms.TextBox txtDepartureDate;
     }
 }
 
