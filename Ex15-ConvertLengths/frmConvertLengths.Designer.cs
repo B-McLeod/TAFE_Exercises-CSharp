@@ -90,6 +90,7 @@
 			this.btnCalculate.Size = new System.Drawing.Size(80, 23);
 			this.btnCalculate.TabIndex = 26;
 			this.btnCalculate.Text = "&Calculate";
+			this.btnCalculate.Click += new System.EventHandler(this.calculateLength);
 			// 
 			// cboConversions
 			// 
@@ -98,6 +99,7 @@
 			this.cboConversions.Name = "cboConversions";
 			this.cboConversions.Size = new System.Drawing.Size(144, 21);
 			this.cboConversions.TabIndex = 24;
+			this.cboConversions.SelectedIndexChanged += new System.EventHandler(this.changeConversion);
 			// 
 			// Label1
 			// 

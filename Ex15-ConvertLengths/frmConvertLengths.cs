@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ex15_ConvertLengths
@@ -15,11 +8,17 @@ namespace Ex15_ConvertLengths
 		public frmConvertLengths()
 		{
 			InitializeComponent();
-			cboConversions.ItemsSource = conversionTable;
+
+			for (int i = 0; i < conversionTable.GetLength(0); i++)
+			{
+				cboConversions.Items.Add(conversionTable[i, 0]);
+			}
+
+			cboConversions.SelectedIndex = 0;
 		}
 
 		// Label name, Text box identifiers 2, Multiplier
-		String[,] conversionTable = {
+		private String[,] conversionTable = {
 			{"Miles to kilometers", "Miles", "Kilometers", "1.6093"},
 			{"Kilometers to miles", "Kilometers", "Miles", "0.6214"},
 			{"Feet to meters", "Feet", "Meters", "0.3048"},
@@ -57,6 +56,29 @@ namespace Ex15_ConvertLengths
 		private void btnExit_Click(object sender, System.EventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void changeConversion(object sender, EventArgs e)
+		{
+			lblFromLength.Text = conversionTable[cboConversions.SelectedIndex, 1];
+			lblToLength.Text = conversionTable[cboConversions.SelectedIndex, 2];
+			txtLength.Clear();
+			lblCalculatedLength.Text = "";
+			txtLength.Focus();
+		}
+
+		private void calculateLength(object sender, EventArgs e)
+		{
+			decimal length;
+			if (decimal.TryParse(txtLength.Text, out length))
+			{
+				length = length * decimal.Parse(conversionTable[cboConversions.SelectedIndex, 3]);
+				lblCalculatedLength.Text = length.ToString();
+			}
+			else
+			{
+				MessageBox.Show("Enter a valid number.", "Entry Error");
+			}
 		}
 	}
 }

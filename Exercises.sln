@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex13-CalculateReservationTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex14-WorkWithStrings", "Ex14-WorkWithStrings\Ex14-WorkWithStrings.csproj", "{9DBFE6FA-20AA-4C6C-B857-AB63E550C98E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex15-ConvertLengths", "Ex15-ConvertLengths\Ex15-ConvertLengths.csproj", "{2F7CC9EC-519B-4114-869A-D5BF1DA92FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex16-AddSecondForm", "Ex16-AddSecondForm\Ex16-AddSecondForm.csproj", "{64BF7E43-3231-4973-AAFE-CFB0DEB201BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{9DBFE6FA-20AA-4C6C-B857-AB63E550C98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DBFE6FA-20AA-4C6C-B857-AB63E550C98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DBFE6FA-20AA-4C6C-B857-AB63E550C98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7CC9EC-519B-4114-869A-D5BF1DA92FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7CC9EC-519B-4114-869A-D5BF1DA92FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7CC9EC-519B-4114-869A-D5BF1DA92FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7CC9EC-519B-4114-869A-D5BF1DA92FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BF7E43-3231-4973-AAFE-CFB0DEB201BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BF7E43-3231-4973-AAFE-CFB0DEB201BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BF7E43-3231-4973-AAFE-CFB0DEB201BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BF7E43-3231-4973-AAFE-CFB0DEB201BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F7CC9EC-519B-4114-869A-D5BF1DA92FEF}</ProjectGuid>
+    <ProjectGuid>{64BF7E43-3231-4973-AAFE-CFB0DEB201BD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ex15_ConvertLengths</RootNamespace>
-    <AssemblyName>Ex15-ConvertLengths</AssemblyName>
+    <RootNamespace>Ex16_AddSecondForm</RootNamespace>
+    <AssemblyName>Ex16-AddSecondForm</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,16 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmConvertLengths.cs">
+    <Compile Include="frmInvoiceTotal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConvertLengths.Designer.cs">
-      <DependentUpon>frmConvertLengths.cs</DependentUpon>
+    <Compile Include="frmInvoiceTotal.Designer.cs">
+      <DependentUpon>frmInvoiceTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesTax.Designer.cs">
+      <DependentUpon>frmSalesTax.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmConvertLengths.resx">
-      <DependentUpon>frmConvertLengths.cs</DependentUpon>
+    <EmbeddedResource Include="frmSalesTax.resx">
+      <DependentUpon>frmSalesTax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
